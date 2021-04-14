@@ -33,3 +33,9 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: 'Microsoft Azure (comtactdev): #1441970'
+    appName: 'webapp-selfhost-test.azurewebsites.net'
+    package: $(System.DefaultWorkingDirectory)/**/*.zip  
