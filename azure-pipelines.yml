@@ -36,6 +36,7 @@ steps:
 
 - task: AzureWebApp@1
   inputs:
+    appType: webApp
     azureSubscription: 'Microsoft Azure (comtactdev): #1441970'
     appName: 'webapp-selfhost-test.azurewebsites.net'
     package: $(System.DefaultWorkingDirectory)/**/*.zip  
