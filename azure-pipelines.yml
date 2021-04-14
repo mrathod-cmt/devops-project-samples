@@ -37,6 +37,6 @@ steps:
 - task: AzureWebApp@1
   inputs:
     appType: webApp
-    azureSubscription: '538c5bd6-4819-42cd-8330-866acbc6130d'
+    azureSubscription: 'github.com_mrathod-cmt'
     appName: 'webapp-selfhost-test.azurewebsites.net'
     package: $(System.DefaultWorkingDirectory)/**/*.zip  
