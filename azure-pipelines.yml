@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  #vmImage: 'windows-latest'
+  #vmImage: 'windows-latest*'
   name: "vmss-win2019-img"
 
 variables:
